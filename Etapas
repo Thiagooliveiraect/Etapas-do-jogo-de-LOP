@@ -1,0 +1,55 @@
+
+////Lider:Thiago Souza de Oliveira
+////Vice-lider:MOISES SIQUEIRA DE ALCANTARA     
+
+
+
+
+
+
+//////////ETAPA 1
+
+
+
+function setup() {
+  createCanvas(400, 400);
+  noFill();
+}
+
+function draw() {
+  background(220);
+}
+
+function draw(){
+  ellipse(100,200,100,100)
+  
+  rect(200,170,180,80)
+}
+
+/////////ETAPA 2
+
+var x = 100;
+var y = 100;
+var v = 15
+
+function setup() {
+  createCanvas(513, 513);
+}
+
+function draw() {
+  background(220);
+  if(keyIsDown(LEFT_ARROW))
+    x-=v;
+  
+  if(keyIsDown(RIGHT_ARROW))
+    x+=v;
+
+   if(keyIsDown(UP_ARROW))
+    y-=v;
+  
+  if(keyIsDown(DOWN_ARROW))
+    y+=v
+
+  ellipse(x,y,50,50)
+
+}
